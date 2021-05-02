@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">KisaanOwaz</string>
+    <string name="text_english_hindi">Text/लिखना</string>
+    <string name="voice_english_hindi">Voice/बोलकर</string>
+    <string-array name="languages">
+        <item>English</item>
+        <item>Hindi</item>
+        <item>Punjabi</item>
+        <item>Marathi</item>
+        <item>Telugu</item>
+        <item>Tamil</item>
+    </string-array>
+</resources>

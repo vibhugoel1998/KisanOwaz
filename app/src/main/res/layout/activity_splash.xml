@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/very_dark_blue">
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imgFarmer"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        app:layout_constraintLeft_toLeftOf="@id/rootLayout"
+        app:layout_constraintRight_toRightOf="@id/rootLayout"
+        app:layout_constraintTop_toTopOf="@id/rootLayout"
+        app:layout_constraintBottom_toBottomOf="@id/rootLayout"
+        android:src="@drawable/farmer"/>
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtKisaanOWaaz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/rootLayout"
+        app:layout_constraintEnd_toEndOf="@id/rootLayout"
+        app:layout_constraintTop_toBottomOf="@id/imgFarmer"
+        android:layout_marginTop="@dimen/dp_20"
+        android:text="@string/app_name"
+        android:textSize="@dimen/sp_30"
+        android:textColor="@color/white"
+        android:textStyle="bold"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

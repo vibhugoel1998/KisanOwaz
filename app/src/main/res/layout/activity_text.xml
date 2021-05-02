@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout android:id="@+id/rootLayout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/very_dark_blue">
+    <Spinner
+        android:id="@+id/spinner_language"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/rootLayout"
+        app:layout_constraintEnd_toEndOf="@id/rootLayout"
+        app:layout_constraintTop_toTopOf="@id/rootLayout"
+        android:layout_marginTop="@dimen/dp_40"
+        android:entries="@array/languages"/>
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edt_question"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/rootLayout"
+        app:layout_constraintEnd_toEndOf="@id/rootLayout"
+        android:layout_marginLeft="@dimen/dp_20"
+        android:layout_marginRight="@dimen/dp_20"
+        app:layout_constraintTop_toBottomOf="@id/spinner_language"
+        android:layout_marginTop="@dimen/dp_20"
+        android:textColor="@color/white"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
